@@ -2,7 +2,7 @@
 
 ## Hosted Link
 
-[Live Demo](https://jazzy-dusk-01f21e.netlify.app/)
+[Live Demo](https://dishrating.netlify.app/)
 
 ## Introduction
 
