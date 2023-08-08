@@ -12,9 +12,11 @@ function Result() {
 
   return (
     <div className="dishlist_item">
-      {sortedSelections.map((dish, index) => (
-        <Dishes key={dish.id} dish={dish} text={`Point ${dish.point}`} />
-      ))}
+      {userSelections.length > 0
+        ? sortedSelections.map((dish, index) => (
+            <Dishes key={dish.id} dish={dish} text={`Point ${dish.point}`} />
+          ))
+        : <h1>No Item added, Please add some items.</h1>}
     </div>
   );
 }

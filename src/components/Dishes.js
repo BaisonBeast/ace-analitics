@@ -2,10 +2,10 @@ import React, { useContext, useState } from "react";
 
 import { UserContext } from "../contexts/UserContext";
 
-function Dishes({ dish }) {
+function Dishes({dish}) {
   const { userSelections, setUserSelections } = useContext(UserContext);
   const [showNotification, setShowNotification] = useState(false);
-
+  
   const removeExtra = (updatedDishes) => {
     return updatedDishes.filter((d) => d.point <= 30 && d.point >= 10);
   };

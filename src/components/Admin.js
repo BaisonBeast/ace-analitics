@@ -9,13 +9,13 @@ function Admin() {
     <div className="admin-panel">
       <h2>Admin Panel</h2>
       <div className="admin-user-list">
-        {users.map((user) => (
+        {users.length > 0 ? users.map((user) => (
           <AdminUser
             key={user.id}
             user={user}
             deleteUserVote={deleteUserVote}
           />
-        ))}
+        )): <h1>No user Added</h1>}
       </div>
     </div>
   );
